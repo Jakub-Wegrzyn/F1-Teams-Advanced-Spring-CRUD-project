@@ -1,0 +1,928 @@
+{
+	"info": {
+		"_postman_id": "6728bbd3-028c-4152-8753-0dc0300e5495",
+		"name": "F1-CRUD-ADVANCED",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12754712"
+	},
+	"item": [
+		{
+			"name": "Post Driver/Drivers",
+			"item": [
+				{
+					"name": "Post Drivers Array",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\r\n        \"firstName\": \"Max\",\r\n        \"lastName\": \"Verstappen\",\r\n        \"birthDate\": \"1997-09-30\",\r\n        \"country\": \"The Netherlands\",\r\n        \"team\": \"Red Bull Racing\",\r\n        \"numberOfWorldChampionships\": 1,\r\n        \"currentDriverNumber\": 1\r\n    }, {\r\n        \"firstName\": \"Lewis\",\r\n        \"lastName\": \"Hamilton\",\r\n        \"birthDate\": \"1985-01-07\",\r\n        \"country\": \"Great Britain\",\r\n        \"team\": \"Mercedes-AMG Petronas Formula One Team\",\r\n        \"numberOfWorldChampionships\": 7,\r\n        \"currentDriverNumber\": 44\r\n    }, {\r\n        \"firstName\": \"Valtteri\",\r\n        \"lastName\": \"Bottas\",\r\n        \"birthDate\": \"1989-08-28\",\r\n        \"country\": \"Finland\",\r\n        \"team\": \"Alfa Romeo Racing Orlen\",\r\n        \"numberOfWorldChampionships\": 0,\r\n        \"currentDriverNumber\": 77\r\n    }, {\r\n        \"firstName\": \"Sergio\",\r\n        \"lastName\": \"Pérez\",\r\n        \"birthDate\": \"1990-01-26\",\r\n        \"country\": \"Mexico\",\r\n        \"team\": \"Red Bull Racing\",\r\n        \"numberOfWorldChampionships\": 0,\r\n        \"currentDriverNumber\": 11\r\n    }, {\r\n        \"firstName\": \"Carlos\",\r\n        \"lastName\": \"Sainz Jr.\",\r\n        \"birthDate\": \"1994-09-01\",\r\n        \"country\": \"Spain\",\r\n        \"team\": \"Scuderia Ferrari\",\r\n        \"numberOfWorldChampionships\": 0,\r\n        \"currentDriverNumber\": 55\r\n    }, {\r\n        \"firstName\": \"Lando\",\r\n        \"lastName\": \"Norris\",\r\n        \"birthDate\": \"1999-11-13\",\r\n        \"country\": \"Great Britain\",\r\n        \"team\": \"McLaren F1 Team\",\r\n        \"numberOfWorldChampionships\": 0,\r\n        \"currentDriverNumber\": 4\r\n    }, {\r\n        \"firstName\": \"Charles\",\r\n        \"lastName\": \"Leclerc\",\r\n        \"birthDate\": \"1997-10-16\",\r\n        \"country\": \"Monaco\",\r\n        \"team\": \"Scuderia Ferrari\",\r\n        \"numberOfWorldChampionships\": 0,\r\n        \"currentDriverNumber\": 16\r\n    }, {\r\n        \"firstName\": \"Daniel\",\r\n        \"lastName\": \"Riccardo\",\r\n        \"birthDate\": \"1989-07-01\",\r\n        \"country\": \"Australia\",\r\n        \"team\": \"McLaren F1 Team\",\r\n        \"numberOfWorldChampionships\": 0,\r\n        \"currentDriverNumber\": 3\r\n    }, {\r\n        \"firstName\": \"Pierre\",\r\n        \"lastName\": \"Gasly\",\r\n        \"birthDate\": \"1996-02-07\",\r\n        \"country\": \"France\",\r\n        \"team\": \"Scuderia AlphaTauri\",\r\n        \"numberOfWorldChampionships\": 0,\r\n        \"currentDriverNumber\": 10\r\n    }, {\r\n        \"firstName\": \"Fernando\",\r\n        \"lastName\": \"Alonso\",\r\n        \"birthDate\": \"1989-07-29\",\r\n        \"country\": \"Spain\",\r\n        \"team\": \"Alpine F1 Team\",\r\n        \"numberOfWorldChampionships\": 2,\r\n        \"currentDriverNumber\": 14\r\n    }, {\r\n        \"firstName\": \"Esteban\",\r\n        \"lastName\": \"Ocon\",\r\n        \"birthDate\": \"1996-09-17\",\r\n        \"country\": \"France\",\r\n        \"team\": \"Alpine F1 Team\",\r\n        \"numberOfWorldChampionships\": 0,\r\n        \"currentDriverNumber\": 31\r\n    }, {\r\n        \"firstName\": \"Sebastian\",\r\n        \"lastName\": \"Vettel\",\r\n        \"birthDate\": \"1987-07-03\",\r\n        \"country\": \"Germany\",\r\n        \"team\": \"Aston Martin Cognizant Formula One Team\",\r\n        \"numberOfWorldChampionships\": 4,\r\n        \"currentDriverNumber\": 5\r\n    }, {\r\n        \"firstName\": \"Lance\",\r\n        \"lastName\": \"Stroll\",\r\n        \"birthDate\": \"1998-10-29\",\r\n        \"country\": \"Canada\",\r\n        \"team\": \"Aston Martin Cognizant Formula One Team\",\r\n        \"numberOfWorldChampionships\": 0,\r\n        \"currentDriverNumber\": 18\r\n    }, {\r\n        \"firstName\": \"Yūki\",\r\n        \"lastName\": \"Tsunoda\",\r\n        \"birthDate\": \"2000-05-11\",\r\n        \"country\": \"Japan\",\r\n        \"team\": \"Scuderia AlphaTauri\",\r\n        \"numberOfWorldChampionships\": 0,\r\n        \"currentDriverNumber\": 22\r\n    }, {\r\n        \"firstName\": \"George\",\r\n        \"lastName\": \"Russell\",\r\n        \"birthDate\": \"1998-02-15\",\r\n        \"country\": \"Great Britain\",\r\n        \"team\": \"Mercedes-AMG Petronas Formula One Team\",\r\n        \"numberOfWorldChampionships\": 0,\r\n        \"currentDriverNumber\": 63\r\n    }, {\r\n        \"firstName\": \"Nicholas\",\r\n        \"lastName\": \"Latifi\",\r\n        \"birthDate\": \"1995-06-29\",\r\n        \"country\": \"Canada\",\r\n        \"team\": \"Williams F1\",\r\n        \"numberOfWorldChampionships\": 0,\r\n        \"currentDriverNumber\": 6\r\n    }, {\r\n        \"firstName\": \"Mick\",\r\n        \"lastName\": \"Schumacher\",\r\n        \"birthDate\": \"1999-03-22\",\r\n        \"country\": \"Germany\",\r\n        \"team\": \"Haas F1 Team\",\r\n        \"numberOfWorldChampionships\": 0,\r\n        \"currentDriverNumber\": 47\r\n    }, {\r\n        \"firstName\": \"Zhou\",\r\n        \"lastName\": \"Guanyu\",\r\n        \"birthDate\": \"1999-05-30\",\r\n        \"country\": \"China\",\r\n        \"team\": \"Alfa Romeo Racing Orlen\",\r\n        \"numberOfWorldChampionships\": 0,\r\n        \"currentDriverNumber\": 24\r\n    }, {\r\n        \"firstName\": \"Alexander\",\r\n        \"lastName\": \"Albon\",\r\n        \"birthDate\": \"1996-03-23\",\r\n        \"country\": \"Thailand\",\r\n        \"team\": \"Williams F1\",\r\n        \"numberOfWorldChampionships\": 0,\r\n        \"currentDriverNumber\": 23\r\n    }, {\r\n        \"firstName\": \"Kevin\",\r\n        \"lastName\": \"Magnussen\",\r\n        \"birthDate\": \"1992-10-05\",\r\n        \"country\": \"Denmark\",\r\n        \"team\": \"Haas F1 Team\",\r\n        \"numberOfWorldChampionships\": 0,\r\n        \"currentDriverNumber\": 20\r\n    }\r\n]\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/driver/postalldrivers",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"driver",
+								"postalldrivers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Single Record",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"firstName\": \"Kimi\",\r\n        \"lastName\": \"Räikkönen\",\r\n        \"birthDate\": \"1979-10-17\",\r\n        \"country\": \"Finland\",\r\n        \"team\": null,\r\n        \"numberOfWorldChampionships\": 1,\r\n        \"currentDriverNumber\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/driver/postonedriver",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"driver",
+								"postonedriver"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Put Driver/Drivers",
+			"item": [
+				{
+					"name": "Put Single Driver (May occur repetitions)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"firstName\": \"Scott\",\r\n        \"lastName\": \"Speed\",\r\n        \"birthDate\": \"1983-01-24\",\r\n        \"country\": \"USA\",\r\n        \"team\": null,\r\n        \"numberOfWorldChampionships\": 0,\r\n        \"currentDriverNumber\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/driver/updatedriver/20",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"driver",
+								"updatedriver",
+								"20"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Drivers Array (Update or Insert)",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\r\n        \"firstName\": \"Max\",\r\n        \"lastName\": \"Verstappen\",\r\n        \"birthDate\": \"1997-09-30\",\r\n        \"country\": \"The Netherlands\",\r\n        \"team\": \"Red Bull Racing\",\r\n        \"numberOfWorldChampionships\": 1,\r\n        \"currentDriverNumber\": 1\r\n    }, {\r\n        \"firstName\": \"Robert\",\r\n        \"lastName\": \"Kubica\",\r\n        \"birthDate\": \"1984-12-07\",\r\n        \"country\": \"Poland\",\r\n        \"team\": null,\r\n        \"numberOfWorldChampionships\": 0,\r\n        \"currentDriverNumber\": null\r\n    }, {\r\n        \"firstName\": \"Jenson\",\r\n        \"lastName\": \"Button\",\r\n        \"birthDate\": \"1980-01-19\",\r\n        \"country\": \"Great Britain\",\r\n        \"team\": null,\r\n        \"numberOfWorldChampionships\": 1,\r\n        \"currentDriverNumber\": null\r\n    }, {\r\n        \"firstName\": \"Sebastian\",\r\n        \"lastName\": \"Vettel\",\r\n        \"birthDate\": \"1987-07-03\",\r\n        \"country\": \"Germany\",\r\n        \"team\": \"Aston Martin Cognizant Formula One Team\",\r\n        \"numberOfWorldChampionships\": 4,\r\n        \"currentDriverNumber\": 5\r\n    }, {\r\n        \"firstName\": \"Adrian\",\r\n        \"lastName\": \"Sutil\",\r\n        \"birthDate\": \"1983-01-11\",\r\n        \"country\": \"Germany\",\r\n        \"team\": null,\r\n        \"numberOfWorldChampionships\": 0,\r\n        \"currentDriverNumber\": null\r\n    }\r\n]\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/driver/putalldrivers",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"driver",
+								"putalldrivers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get Driver/Drivers",
+			"item": [
+				{
+					"name": "Get All Drivers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/driver/getalldrivers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"driver",
+								"getalldrivers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Driver/Drivers by Current Driver Number",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/driver/drivernumber/?value=1&value=44",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"driver",
+								"drivernumber",
+								""
+							],
+							"query": [
+								{
+									"key": "value",
+									"value": "1"
+								},
+								{
+									"key": "value",
+									"value": "44"
+								},
+								{
+									"key": "value",
+									"value": "22",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "77",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "11",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "55",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "4",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "16",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "10",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Driver/Drivers by Team",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/driver/team/?value={{redbull}}&value={{mercedes}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"driver",
+								"team",
+								""
+							],
+							"query": [
+								{
+									"key": "value",
+									"value": "{{redbull}}"
+								},
+								{
+									"key": "value",
+									"value": "{{mercedes}}"
+								},
+								{
+									"key": "value",
+									"value": "{{alfaromeo}}",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "{{ferrari}}",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "{{mclaren}}",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "{{alpine}}",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "{{williams}}",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "{{haas}}",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Driver/Drivers by Country",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8080/api/driver/country/?value={{thenetherlands}}&value={{greatbritain}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"driver",
+								"country",
+								""
+							],
+							"query": [
+								{
+									"key": "value",
+									"value": "{{thenetherlands}}"
+								},
+								{
+									"key": "value",
+									"value": "{{greatbritain}}"
+								},
+								{
+									"key": "value",
+									"value": "{{finland}}",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "{{mexico}}",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "{{spain}}",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "{{monaco}}",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "{{australia}}",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "{{france}}",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "{{germany}}",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "{{japan}}",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "{{canada}}",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "{{china}}",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "{{thailand}}",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "{{denmark}}",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Delete Driver/Drivers",
+			"item": [
+				{
+					"name": "Delete Driver/Drivers by LastName",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/driver/delete/?value=Verstappen&value=Hamilton&value=Bottas&value=Pérez&value=Norris&value=Riccardo&value=Gasly",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"driver",
+								"delete",
+								""
+							],
+							"query": [
+								{
+									"key": "value",
+									"value": "Verstappen"
+								},
+								{
+									"key": "value",
+									"value": "Hamilton"
+								},
+								{
+									"key": "value",
+									"value": "Bottas"
+								},
+								{
+									"key": "value",
+									"value": "Pérez"
+								},
+								{
+									"key": "value",
+									"value": "Norris"
+								},
+								{
+									"key": "value",
+									"value": "Riccardo"
+								},
+								{
+									"key": "value",
+									"value": "Gasly"
+								},
+								{
+									"key": "value",
+									"value": "Ocon",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "Leclerc",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "Sainz Jr.",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "Alonso",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "Vettel",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "Stroll",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "Tsunoda",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "Russell",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "Latifi",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "Schumacher",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "Guanyu",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "Albon",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "Magnussen",
+									"disabled": true
+								},
+								{
+									"key": "value",
+									"value": "Räikkönen",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete All Drivers",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/api/driver/deleteall",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"driver",
+								"deleteall"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Get Team/Teams",
+			"item": [
+				{
+					"name": "Get Teams Names",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/formula1/teams",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"formula1",
+								"teams"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Teams Name and Drivers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/formula1/teams/21",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"formula1",
+								"teams",
+								"21"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Drivers by Team",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/formula1/teams/30/drivers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"formula1",
+								"teams",
+								"30",
+								"drivers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Post Driver To Team",
+			"item": [
+				{
+					"name": "Post Driver to Team part1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"firstName\": \"Kimi\",\r\n        \"lastName\": \"Räikkönen\",\r\n        \"birthDate\": \"1979-10-17\",\r\n        \"country\": \"Finland\",\r\n        \"team\": null,\r\n        \"numberOfWorldChampionships\": 1,\r\n        \"currentDriverNumber\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/formula1/teams/21/drivers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"formula1",
+								"teams",
+								"21",
+								"drivers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Driver to Team part2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\": \"Max\",\r\n    \"lastName\": \"Verstappen\",\r\n    \"birthDate\": \"1997-09-30\",\r\n    \"country\": \"The Netherlands\",\r\n    \"team\": \"Red Bull Racing\",\r\n    \"numberOfWorldChampionships\": 1,\r\n    \"currentDriverNumber\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/formula1/teams/25/drivers",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"formula1",
+								"teams",
+								"25",
+								"drivers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Relationships",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/formula1/teams/postrelationships",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"formula1",
+								"teams",
+								"postrelationships"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Delete Relations",
+			"item": [
+				{
+					"name": "Delete All relationships",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/formula1/teams/deleteall",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"formula1",
+								"teams",
+								"deleteall"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Validation Tests",
+			"item": [
+				{
+					"name": "Post driver with short name",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"firstName\": \"M\",\r\n        \"lastName\": \"V\",\r\n        \"birthDate\": \"1997-09-30\",\r\n        \"country\": \"The Netherlands\",\r\n        \"team\": \"Red Bull Racing\",\r\n        \"numberOfWorldChampionships\": 1,\r\n        \"currentDriverNumber\": 1\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/driver/postonedriver",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"driver",
+								"postonedriver"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post empty driver",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/driver/postonedriver",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"driver",
+								"postonedriver"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Future born",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"firstName\": \"Kimi\",\r\n        \"lastName\": \"Räikkönen\",\r\n        \"birthDate\": \"2023-10-17\",\r\n        \"country\": \"Finland\",\r\n        \"team\": null,\r\n        \"numberOfWorldChampionships\": 1,\r\n        \"currentDriverNumber\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/api/driver/postonedriver",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"driver",
+								"postonedriver"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "redbull",
+			"value": "Red Bull Racing"
+		},
+		{
+			"key": "mercedes",
+			"value": "Mercedes-AMG Petronas Formula One Team"
+		},
+		{
+			"key": "alfaromeo",
+			"value": "Alfa Romeo Racing Orlen"
+		},
+		{
+			"key": "ferrari",
+			"value": "Scuderia Ferrari"
+		},
+		{
+			"key": "mclaren",
+			"value": "McLaren F1 Team"
+		},
+		{
+			"key": "alpine",
+			"value": "Alpine F1 Team"
+		},
+		{
+			"key": "williams",
+			"value": "Williams F1"
+		},
+		{
+			"key": "haas",
+			"value": "Haas F1"
+		},
+		{
+			"key": "thenetherlands",
+			"value": "The Netherlands"
+		},
+		{
+			"key": "greatbritain",
+			"value": "Great Britain"
+		},
+		{
+			"key": "finland",
+			"value": "Finland"
+		},
+		{
+			"key": "mexico",
+			"value": "Mexico"
+		},
+		{
+			"key": "spain",
+			"value": "Spain"
+		},
+		{
+			"key": "monaco",
+			"value": "Monaco"
+		},
+		{
+			"key": "australia",
+			"value": "Australia"
+		},
+		{
+			"key": "france",
+			"value": "France"
+		},
+		{
+			"key": "germany",
+			"value": "Germany"
+		},
+		{
+			"key": "japan",
+			"value": "Japan"
+		},
+		{
+			"key": "canada",
+			"value": "Canada"
+		},
+		{
+			"key": "china",
+			"value": "China"
+		},
+		{
+			"key": "thailand",
+			"value": "Thailand"
+		},
+		{
+			"key": "denmark",
+			"value": "Denmark"
+		}
+	]
+}
